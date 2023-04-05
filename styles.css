@@ -1,0 +1,265 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.fa, .fab, .fas, .far {
+  font-family: "Font Awesome 5 Pro" !important;
+  color: #66fcf1;
+}
+
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* General styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #141414;
+  color: #f0f0f0;
+}
+
+/* Navigation */
+nav {
+  background-color: #333;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1rem;
+  position: relative;
+  transition: color 0.3s;
+}
+
+nav a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+
+nav a:hover {
+  color: #66fcf1;
+}
+
+nav a:hover::before {
+  transform: scaleX(1);
+}
+
+/* Profile picture */
+.profile-picture {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border: 3px solid #66fcf1;
+}
+
+
+/* Futuristic styles */
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+section {
+  padding: 60px 0;
+}
+
+.section-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+section h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 500;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-image {
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.about-text {
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+.portfolio-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.portfolio-item {
+  width: 300px;
+  margin-bottom: 2rem;
+}
+
+.portfolio-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio-item:hover .portfolio-image {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-description {
+  text-align: center;
+}
+
+.smaller-image {
+  width: 80%; 
+  max-width: 240px; 
+  display: block;
+  margin: 0 auto; 
+}
+
+.section-content-divider {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.section-content-divider::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0) 49%, #333 50%);
+  transform: translateY(-50%);
+}
+
+.section-divider {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.section-divider::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0) 49%, #333 50%);
+  transform: translateY(-50%);
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill {
+  margin: 1rem;
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.skill-progress {
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  color: white;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+
+
+/* Contact section */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.contact-icon {
+  color: #333;
+  font-size: 2rem;
+  transition: color 0.3s, transform 0.3s;
+  text-decoration: none;
+}
+
+.contact-icon:hover {
+  color: #666;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+
+.phone-number {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+
+/* Media query for mobile responsiveness */
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .about-image,
+  .about-text {
+    float: none;
+    margin: 0;
+    text-align: center;
+  }
+}

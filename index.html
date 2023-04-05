@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <title>David Mitu - Web Developer</title>
+</head>
+<body>
+  <header>
+    <h1>David Mitu</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about" class="section-divider">
+    <div class="section-content">
+      <h2>About Me</h2>
+      <img src="images/profile_picture-modified.png" alt="David Mitu" class="profile-picture about-image">
+      <p class="about-text">As a driven and passionate junior web developer, I have a strong foundation in JavaScript, ReactJS, NodeJS, Express, and MongoDB. My curiosity and quick learning abilities allow me to adapt to new technologies, making me an invaluable asset to any development team.
+        Eager to contribute to innovative projects, my career goals include collaborating with like-minded professionals to create cutting-edge web applications and drive advancements in the tech industry.
+        My dedication and enthusiasm for coding fuel my desire to make a tangible impact on both clients and colleagues alike.
+        I am excited to embrace the challenges and opportunities that lie ahead in the rapidly evolving digital landscape, as I continue to learn, adapt, and contribute to the success of any organization I join.</p>
+    </div>
+  </section>
+  
+  <section id="skills" class="section-divider">
+    <div class="section-content">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <div class="skill">
+          <div class="skill-progress" data-percent="70">
+            <span class="skill-title">JavaScript</span>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-progress" data-percent="70">
+            <span class="skill-title">ReactJS</span>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-progress" data-percent="70">
+            <span class="skill-title">NodeJS</span>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-progress" data-percent="70">
+            <span class="skill-title">Express</span>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-progress" data-percent="65">
+            <span class="skill-title">MongoDB</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section id="portfolio" class="section-divider">
+    <div class="section-content">
+      <h2>Portfolio</h2>
+      <div class="portfolio-container" >
+        <div class="portfolio-item">
+          <a href="https://spontaneous-fox-e15495.netlify.app/" target="_blank" rel="noopener noreferrer">
+            <img src="images/keeperappphoto.jpg" alt="Project 1" class="portfolio-image">
+          </a>
+          <p class="portfolio-description">the revived version of the classic Keeper app! I have lovingly recreated this popular note-taking and idea management app using React to provide users with a modern, responsive, and user-friendly experience.
+
+            As the creator of this project, my goal was to bring back the simplicity and convenience of the original Keeper app, while leveraging the power of React to deliver a seamless experience across various platforms.</p>
+        </div>
+        <div class="portfolio-item">
+          <a href="https://frizeriadd.onrender.com/" target="_blank" rel="noopener noreferrer">
+            <img src="images/Frizeria.jpg" alt="Project 2" class="portfolio-image smaller-image">
+          </a>
+          <p class="portfolio-description">This user-friendly website allows you to browse our barbershop's services, check the availability of our skilled barbers, and effortlessly make a reservation for your desired time slot. I have designed the platform with your convenience in mind, ensuring that you receive a confirmation message upon booking, as well as a friendly reminder 2 hours before your appointment is scheduled to take place.
+
+            I invite you to explore and take advantage of our easy-to-use booking platform, confident that it will enhance your experience with our local barbershop and make scheduling appointments more accessible and hassle-free.</p>
+        </div>
+        <div class="portfolio-item">
+          <a href="https://dmitutodolist.onrender.com/" target="_blank" rel="noopener noreferrer">
+            <img src="images/todolistphoto.jpg" alt="Project 3" class="portfolio-image">
+          </a>
+          <p class="portfolio-description">I've developed a ToDoList app that simplifies shopping experiences by allowing users to effortlessly create, update, and delete items from their shopping lists. With its user-friendly interface and efficient CRUD operations, the app ensures seamless organization and management of daily shopping tasks, making life easier and more efficient for its users.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  <section id="contact" class="section-divider">
+    <div class="section-content">
+      <h2>Contact</h2>
+      <div class="contact-container">
+        <a href="https://github.com/DMitu" target="_blank" class="contact-icon">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/david-mitu-2ab654163/" target="_blank" class="contact-icon">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://www.facebook.com/david.mitu.3" target="_blank" class="contact-icon">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/daviddmitu" target="_blank" class="contact-icon">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/+40729179755" target="_blank" class="contact-icon">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <div class="contact-icon phone-number">
+          <a href="tel:+40729179755" target="_blank" class="contact-icon">
+           <i class="fa-solid fa-phone fa-shake"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <script src="scripts.js"></script>
+</body>
+</html>
