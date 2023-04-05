@@ -7,6 +7,14 @@ html {
   color: #66fcf1;
 }
 
+.animate {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+  transition: opacity 1s, transform 1s;
+}
 
 header {
   display: flex;

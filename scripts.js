@@ -27,3 +27,21 @@ skillProgress.forEach((skill) => {
     ease: "expo.out",
   });
 });
+
+
+function handleIntersection(entries, observer) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}
+
+
+const observer = new IntersectionObserver(handleIntersection);
+
+
+document.querySelectorAll('.animate').forEach((element) => {
+  observer.observe(element);
+});
